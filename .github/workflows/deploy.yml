@@ -50,7 +50,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.VPS_PORT }}
         script: |
-          cd /home/u716303331/domains/ocheavenhomes.com/ocheaven
+          cd /home/u694674902/domains/ocheavenhomes.com/ocheaven
           php artisan migrate --force
           php artisan optimize
 
