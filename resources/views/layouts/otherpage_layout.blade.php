@@ -176,6 +176,9 @@
                         <li class="has-dropdown">
                             <a href="{{ route('properties') }}">Properties</a>
                         </li>
+                        <li class="has-dropdown">
+                            <a href="{{ route('agreement') }}" target="__blank">Agreement Policy</a>
+                        </li>
                         @auth
                             <li class="has-dropdown">
                                 <a href="{{ route('user.dashboard') }}">Dashboard</a>

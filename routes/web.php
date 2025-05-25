@@ -231,7 +231,7 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
         Route::get('/terms_services', 'TermsServices')->name('admin.terms');
         Route::post('/store-terms', 'StoreTerms');
 
-        Route::get('/agreeent-doc', 'agreementDoc')->name('admin.agreement');
+        Route::get('/agreeent-doc', 'agreementDoc')->name('admin.agreement.doc');
 
     });
 
