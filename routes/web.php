@@ -32,6 +32,8 @@ Route::get('/clear', function() {
     return "Cleared!";
 });
 
+Auth::routes();
+
 // route for email verification code
 Route::get('/verification', [App\Http\Controllers\Auth\RegisterController::class, 'verifyPage']);
 Route::post('/verification', [App\Http\Controllers\Auth\RegisterController::class, 'verifyNow'])->name('verifyuser');
